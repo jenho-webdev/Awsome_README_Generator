@@ -41,6 +41,7 @@ Powerful:
 The README Generator app can generate README files that include a variety of information about your project, such as its name, description, features, and GitHub username.
 
 Check and create Markdown file with a valid window filenames:
+
 The app auto create the markdown file base on your project/app name and auto avoid any invalid character by replacing them with the character '-'. 
 
 ## Installation
