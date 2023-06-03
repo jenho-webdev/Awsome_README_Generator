@@ -1,4 +1,4 @@
-# ReadMe Markdown file Generator
+# ReadMe Markdown File Generator
 
 ## Introduction
 
