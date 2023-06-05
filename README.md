@@ -46,6 +46,12 @@ The app auto create the markdown file base on your project/app name and auto avo
 
 ## Installation
 
+Steps to download and install the app:
+Download the package: Hit the "Code" button within this GitHub repo to copy link
+Clone: Within GitBash, use the command "git clone paste link here"
+NPM: Use the command "npm init -y" to install Node Package Manager
+Inquirer: Use the command "npm install inquirer" to get npm's inquirer package
+
 To install the README Generator app, you can use the following command:
 
     npm install 
