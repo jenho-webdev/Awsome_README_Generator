@@ -16,17 +16,18 @@ To use the README Generator app, see the installation section for insturction on
 
 Once you have it installed and run, the app will prompt you for the following information:
 
-    -Your project's name or title
-    -Your project's description
-    -Your project's installation steps
-    -Your project's usags details
-    -Your project's contribution guideline
-    -Your project's license infomation
-    -Your project's written tests and instruction on how to run them
-    -Your project's GitHub username
-    -Your project's email address for others to reach out for more questions
+-Your project's name or title 
+**Space will be replaced by "-" and "\\/:*?\"<>|" will be removed in the filename en ensure a valid filename in Window file system**
+-Your project's description
+-Your project's installation steps
+-Your project's usags details
+-Your project's contribution guideline
+-Your project's license infomation
+-Your project's written tests and instruction on how to run them
+-Your project's GitHub username
+-Your project's email address for others to reach out for more questions
 
-Once you have answered all of the prompts, the README Generator app will generate a README file named after the tile you provided in Markdown format and save it to the current directory. It also auto replace any invalid characters in your project tile for windows filenames with a '-' so that the Markdown file name will be valid.
+Once you have answered all of the prompts, the README Generator app will generate a README file named after the tile you provided in Markdown format and save it to the current directory. It also auto replace any space in your project title with a "-" and remove any invalid characters(\\/:*?\"<>|) for your README markdown filenames, so that the filename will be valid in Window file systems.
 
 ## Features
 
@@ -67,3 +68,4 @@ If you would like to contribute to the README Generator app, you can do so by fo
 ## License
 
 The README Generator app is licensed under the MIT License.
+[![GPL](https://img.shields.io/badge/License-GPL-lightgrey.svg)](https://img.shields.io/badge/License-GPL-lightgrey.svg)

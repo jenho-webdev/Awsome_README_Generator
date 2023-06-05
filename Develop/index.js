@@ -10,18 +10,16 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "Input your project title(Any illegal filename characters will be replaced by -): ",
-    validate: titleInput => 
-    {
-      if (titleInput){
+    message:
+      "Input your project title(Any illegal filename characters will be replaced by -): ",
+    validate: (titleInput) => {
+      if (titleInput) {
         return true;
-      }
-      else  
-      {
+      } else {
         console.log("Please enter a title name for your project!");
         return false;
       }
-    }
+    },
   },
   {
     type: "input",
@@ -42,7 +40,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "contributing",
+    name: "contribution",
     message: "Please specify contribution guidelines for your project.",
   },
   {
@@ -55,7 +53,12 @@ const questions = [
     type: "list",
     name: "license",
     message: "Select the license used for this project.",
-    choices: ["none", "Apache2.0", "GPL", "MIT"],
+    choices: ["none","Apache2.0","GPL","MIT"],
+  },
+  {
+    type: "input",
+    name: "name",
+    message: "Provide code owner's name:",
   },
   {
     type: "input",
@@ -67,7 +70,7 @@ const questions = [
     name: "email",
     message:
       "Provide an e-mail address for others to reach out to you for additional questions:",
-  }
+  },
 ];
 
 // TODO: Create a function to write README file
@@ -82,9 +85,10 @@ function writeToFile(validFileName, data)
 // TODO: Create a function to initialize app
 async function init() 
 {
-  
   const answers = await inquirer.prompt(questions,{firstOnly:false});
-  const validFileName = answers.title.trim().replaceAll("\\/:*?\"<>|s,&.!~@#$%^()+{}'`[]=", "-");
+  let validFileName = answers.title.trim().toLowerCase().replaceAll(/\s/g, "-");
+  validFileName = validFileName.toLowerCase().replaceAll(/[\\/:*?\"<>|]/g, "");
+  console.log(validFileName);
   const createMD = generateMarkdown(answers);
   try {
     writeToFile(validFileName,createMD);
