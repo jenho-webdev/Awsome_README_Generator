@@ -1,4 +1,21 @@
-# ReadMe Markdown File Generator
+# ReadMe Markdown File Generator [![MIT License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]([https://opensource.org/license/mit/](https://github.com/jenho-webdev/Awsome_README_Generator/blob/main/LICENSE))
+
+
+## Table of Contents
+
+- [About The Project](#introduction)
+
+- [Usage](#usage)
+
+- [Features](#features)
+
+- [Installation](#installation)
+
+- [Contributing](#contributing)
+
+- [License](#license)
+
+- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -16,16 +33,17 @@ To use the README Generator app, see the installation section for insturction on
 
 Once you have it installed and run, the app will prompt you for the following information:
 
--Your project's name or title 
-**Space will be replaced by "-" and "\\/:*?\"<>|" will be removed in the filename en ensure a valid filename in Window file system**
--Your project's description
--Your project's installation steps
--Your project's usags details
--Your project's contribution guideline
--Your project's license infomation
--Your project's written tests and instruction on how to run them
--Your project's GitHub username
--Your project's email address for others to reach out for more questions
+    -Your project's name or title 
+    **Space will be replaced by "-" and "\/:*?"<>\|" will be removed in the filename en ensure a valid filename in Window file system**
+    
+    -Your project's description
+    -Your project's installation steps
+    -Your project's usags detail|
+    -Your project's contribution guideline
+    -Your project's license infomation
+    -Your project's written tests and instruction on how to run them
+    -Your project's GitHub username
+    -Your project's email address for others to reach out for more questions
 
 Once you have answered all of the prompts, the README Generator app will generate a README file named after the tile you provided in Markdown format and save it to the current directory. It also auto replace any space in your project title with a "-" and remove any invalid characters(\\/:*?\"<>|) for your README markdown filenames, so that the filename will be valid in Window file systems.
 
@@ -68,4 +86,12 @@ If you would like to contribute to the README Generator app, you can do so by fo
 ## License
 
 The README Generator app is licensed under the MIT License.
-[![GPL](https://img.shields.io/badge/License-GPL-lightgrey.svg)](https://img.shields.io/badge/License-GPL-lightgrey.svg)
+[![MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://img.shields.io/badge/License-GPL-lightgrey.svg](https://github.com/jenho-webdev/Awsome_README_Generator/blob/main/LICENSE))
+
+    For details of the application's licensing details, please visit: https://github.com/jenho-webdev/Awsome_README_Generator/blob/main/LICENSE
+
+
+## Acknowledgments
+Shield and badges used in this markdown document were sourced from Shields.io.
+Application was inspried by UCI bootcamp coruse( The "coruse") assignment #9. The pplication starter code was provided by the Course, completed and improved by me.
+The user story, acceptance criteria were provided by the Course. 
