@@ -11,6 +11,8 @@
 
 - [Installation](#installation)
 
+- [Demo](#demo)
+
 - [Contributing](#contributing)
 
 - [License](#license)
@@ -78,6 +80,12 @@ To install the README Generator app, you can use the following command:
 Once you have installed the README Generator app, you can run it by typing the following command:
 
     node index.js
+
+## Demo
+
+You can find a sample of generated README file from the program [HERE](./Develop/README_my-awesome-project.md)
+
+A video walkthrough of the applocation: [walkthrought video](https://www.youtube.com/watch?v=AaQLn6LbFWY)
 
 ## Contributing
 
