@@ -88,10 +88,11 @@ async function init()
   const answers = await inquirer.prompt(questions,{firstOnly:false});
   let validFileName = answers.title.trim().toLowerCase().replaceAll(/\s/g, "-");
   validFileName = validFileName.toLowerCase().replaceAll(/[\\/:*?\"<>|]/g, "");
-  console.log(validFileName);
+  
   const createMD = generateMarkdown(answers);
   try {
     writeToFile(validFileName,createMD);
+    console.log(`README_${validFileName}.md was created successfully. Find it in the same directory for your new README file`);
   }
   catch (err) {
     console.log(err);
