@@ -4,7 +4,7 @@ const licenseURL = {
   Apache2: "https://opensource.org/license/apache-2-0/",
 };
 const dayjs = require("dayjs");
-yearAtTimeOfCreation = dayjs().format("YYYY");
+const yearAtTimeOfCreation = dayjs().format("YYYY");
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -82,12 +82,11 @@ function generateMarkdown(data)
     
   const licenseLink = renderLicenseLink(data.license);
   
-
   return ` 
 
   # ${data.title} 
 
-  ${licenseBadge} copyright(c) ${yearAtTimeOfCreation}
+  ${licenseBadge}
 
   ## Description
 
@@ -118,7 +117,7 @@ function generateMarkdown(data)
 
   ${licenseSection}
 
- *Link to the full text of the license: ${licenseLink}
+ Link to the full text of the license: ${licenseLink}
 
   ## Badges
 
@@ -135,8 +134,11 @@ function generateMarkdown(data)
   ## Questions
 
   Have any questions about this project or need additional help?
-  Get help from the community: [Post a message in our discussion board](https://github.com/jenho-webdev/Awsome_README_Generator/discussions)
+
+  Get help from the community: [Post a message in the project repo's discussion board](https://github.com/jenho-webdev/Awsome_README_Generator/discussions)
+  
   Reach out to me on Github: https://github.com/${data.username} 
+  
   Email me @ ${data.email}
 
   ## Credits
