@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { create } = require("domain");
 
-// TODO: Create an array of questions for user input
+// An  array of questions for user input
 //prompt for Project Name, Description, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [
   {
@@ -73,7 +73,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// A function to write README file
 function writeToFile(validFileName, data) 
 {
   //avoid common illegal filename and directory characters
@@ -82,7 +82,7 @@ function writeToFile(validFileName, data)
 
 }
 
-// TODO: Create a function to initialize app
+// A function to initialize app
 async function init() 
 {
   const answers = await inquirer.prompt(questions,{firstOnly:false});
